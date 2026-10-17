@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '971094229384892');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=971094229384892&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playboymeeting — VIP Telegram Join</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --cyan-glow: #00f2fe;
+            --pink-glow: #ff007f;
+            --purple-glow: #7928ca;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #05070e;
+            color: #ffffff;
+            overflow-x: hidden;
+            min-height: 100vh;
+            user-select: none;
+        }
+
+        /* Animated Ambient Background Gradients */
+        .ambient-bg {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(0, 242, 254, 0.12) 0%, transparent 40%),
+                radial-gradient(circle at 80% 80%, rgba(255, 0, 127, 0.12) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(121, 40, 202, 0.08) 0%, transparent 60%);
+            animation: ambientPulse 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes ambientPulse {
+            0% { opacity: 0.7; transform: scale(1); }
+            100% { opacity: 1; transform: scale(1.08); }
+        }
+
+        /* Particle Canvas Layer */
+        #particle-canvas {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* Glassmorphic Container with Dynamic Neon Glow Border */
+        .ultra-card {
+            background: rgba(10, 14, 26, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1.5px solid rgba(0, 242, 254, 0.35);
+            box-shadow: 
+                0 0 35px rgba(0, 242, 254, 0.2),
+                0 0 80px rgba(0, 0, 0, 0.8),
+                inset 0 0 20px rgba(0, 242, 254, 0.08);
+            animation: borderGlow 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes borderGlow {
+            0% {
+                border-color: rgba(0, 242, 254, 0.35);
+                box-shadow: 0 0 30px rgba(0, 242, 254, 0.2), inset 0 0 20px rgba(0, 242, 254, 0.08);
+            }
+            50% {
+                border-color: rgba(255, 0, 127, 0.45);
+                box-shadow: 0 0 40px rgba(255, 0, 127, 0.25), inset 0 0 25px rgba(255, 0, 127, 0.1);
+            }
+            100% {
+                border-color: rgba(0, 242, 254, 0.5);
+                box-shadow: 0 0 35px rgba(0, 242, 254, 0.3), inset 0 0 20px rgba(0, 242, 254, 0.12);
+            }
+        }
+
+        /* Avatar Outer Ring & Radar Pulse */
+        .avatar-container {
+            position: relative;
+        }
+
+        .avatar-ring {
+            background: radial-gradient(circle, rgba(0,242,254,0.2) 0%, rgba(5,7,14,0.9) 100%);
+            border: 2px solid rgba(0, 242, 254, 0.8);
+            box-shadow: 0 0 25px rgba(0, 242, 254, 0.6), inset 0 0 15px rgba(0, 242, 254, 0.4);
+        }
+
+        .radar-pulse {
+            position: absolute;
+            inset: -8px;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 242, 254, 0.6);
+            animation: radarPing 2.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+        }
+
+        @keyframes radarPing {
+            0% { transform: scale(0.9); opacity: 0.8; }
+            100% { transform: scale(1.35); opacity: 0; }
+        }
+
+        /* Title Typography Neon Shadow */
+        .title-glow {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            text-shadow: 
+                0 0 10px rgba(255, 255, 255, 0.9),
+                0 0 25px rgba(255, 255, 255, 0.6),
+                0 0 40px rgba(0, 242, 254, 0.4);
+        }
+
+        /* Badge Glow Pill */
+        .badge-pill {
+            background: rgba(255, 0, 127, 0.12);
+            border: 1px solid rgba(255, 0, 127, 0.7);
+            box-shadow: 0 0 15px rgba(255, 0, 127, 0.4), inset 0 0 10px rgba(255, 0, 127, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .badge-pill:hover {
+            transform: scale(1.05);
+            background: rgba(255, 0, 127, 0.2);
+            box-shadow: 0 0 25px rgba(255, 0, 127, 0.7), inset 0 0 15px rgba(255, 0, 127, 0.3);
+        }
+
+        /* High Voltage Join Button */
+        .btn-neon {
+            background: linear-gradient(135deg, #7928ca 0%, #ff007f 50%, #ff4d4d 100%);
+            background-size: 200% 200%;
+            animation: gradientShift 4s ease infinite;
+            box-shadow: 
+                0 0 25px rgba(255, 0, 127, 0.6),
+                0 0 50px rgba(121, 40, 202, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .btn-neon:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 
+                0 0 40px rgba(255, 0, 127, 0.85),
+                0 0 70px rgba(121, 40, 202, 0.6),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6);
+        }
+
+        .btn-neon:active {
+            transform: translateY(1px) scale(0.98);
+        }
+
+        /* Circular Timer Styling */
+        .timer-font {
+            font-family: 'Orbitron', monospace;
+            letter-spacing: 1px;
+            color: #00f2fe;
+            text-shadow: 
+                0 0 8px rgba(0, 242, 254, 0.9),
+                0 0 20px rgba(0, 242, 254, 0.5);
+        }
+
+        .timer-svg {
+            transform: rotate(-90deg);
+        }
+
+        .timer-track {
+            fill: none;
+            stroke: rgba(0, 242, 254, 0.12);
+            stroke-width: 6;
+        }
+
+        .timer-bar {
+            fill: none;
+            stroke: url(#timerGradient);
+            stroke-width: 7;
+            stroke-linecap: round;
+            stroke-dasharray: 339.29; /* 2 * PI * 54 */
+            stroke-dashoffset: 0;
+            transition: stroke-dashoffset 1s linear;
+            filter: drop-shadow(0px 0px 8px rgba(0, 242, 254, 0.8));
+        }
+
+        /* Auto-Join Status Capsule */
+        .status-capsule {
+            background: rgba(20, 10, 25, 0.75);
+            border: 1px solid rgba(255, 0, 127, 0.6);
+            box-shadow: 
+                0 0 20px rgba(255, 0, 127, 0.3),
+                inset 0 0 10px rgba(255, 0, 127, 0.15);
+        }
+
+        /* Online Green Badge Glow */
+        .online-dot {
+            background-color: #00ff88;
+            box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+            animation: pulseDot 2s infinite;
+        }
+
+        @keyframes pulseDot {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+        }
+
+        /* Subtle Shimmer for Telegram Icon */
+        .paper-plane-icon {
+            filter: drop-shadow(0 0 6px rgba(255,255,255,0.8));
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center p-4 min-h-screen relative overflow-hidden">
+
+    <!-- Ambient Glowing Background Layer -->
+    <div class="ambient-bg"></div>
+
+    <!-- Particle Animation Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Main VIP Landing Card -->
+    <main class="relative z-10 w-full max-w-md ultra-card rounded-3xl p-6 sm:p-8 flex flex-col items-center text-center my-auto transition-all duration-300">
+        
+        <!-- Top Telegram Avatar Icon -->
+        <div class="avatar-container mb-6 mt-1">
+            <div class="radar-pulse"></div>
+            <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full avatar-ring flex items-center justify-center relative">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/50">
+                    <i class="fa-solid fa-paper-plane text-white text-3xl sm:text-4xl paper-plane-icon transform -translate-x-0.5 translate-y-0.5"></i>
+                </div>
+            </div>
+            <!-- Online Status Indicator Dot -->
+            <span class="absolute bottom-1 right-2 w-4 h-4 sm:w-5 sm:h-5 online-dot border-2 border-black rounded-full" title="Online Now"></span>
+        </div>
+
+        <!-- Channel / Service Title -->
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3 title-glow">
+            playboymeeting
+        </h1>
+
+        <!-- Verification Badge -->
+        <div class="badge-pill px-5 py-1.5 rounded-full text-pink-300 text-xs sm:text-sm font-bold tracking-wider flex items-center gap-2 mb-7 cursor-pointer">
+            <span>Real service</span>
+            <span class="text-base animate-bounce">🔥</span>
+        </div>
+
+        <!-- Primary Action Button -->
+        <a id="join-btn" href="https://t.me/+uECO1q_eLqJiMmRl" target="_blank" rel="noopener noreferrer" class="w-full py-4 px-6 rounded-2xl text-white font-extrabold text-lg sm:text-xl tracking-wider flex items-center justify-center gap-3.5 btn-neon mb-8 cursor-pointer relative overflow-hidden group">
+            <i class="fa-solid fa-paper-plane text-2xl group-hover:rotate-12 transition-transform duration-300"></i>
+            <span>JOIN TELEGRAM</span>
+        </a>
+
+        <!-- Radial Countdown Timer -->
+        <div class="relative w-36 h-36 sm:w-40 sm:h-40 flex items-center justify-center mb-8">
+            <svg class="timer-svg w-full h-full" viewBox="0 0 120 120">
+                <defs>
+                    <linearGradient id="timerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#00f2fe" />
+                        <stop offset="50%" stop-color="#7928ca" />
+                        <stop offset="100%" stop-color="#ff007f" />
+                    </linearGradient>
+                </defs>
+                <circle class="timer-track" cx="60" cy="60" r="54"></circle>
+                <circle id="timer-bar" class="timer-bar" cx="60" cy="60" r="54"></circle>
+            </svg>
+            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                <span id="digital-clock" class="timer-font text-2xl sm:text-3xl font-black">01:00</span>
+            </div>
+        </div>
+
+        <!-- Auto-Join Status Banner -->
+        <div class="w-full py-3.5 px-5 rounded-full status-capsule text-pink-200 text-xs sm:text-sm font-semibold tracking-wide flex items-center justify-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-pink-500 animate-ping"></span>
+            <span>Auto joining in <strong id="countdown-sec" class="text-white text-base font-bold">60</strong> seconds...</span>
+        </div>
+
+    </main>
+
+    <!-- Sound & Interactivity Script -->
+    <script>
+        const TELEGRAM_URL = "https://t.me/+uECO1q_eLqJiMmRl";
+        const TOTAL_DURATION = 60; // 1 minute
+        let secondsLeft = TOTAL_DURATION;
+
+        // UI References
+        const digitalClock = document.getElementById("digital-clock");
+        const countdownSec = document.getElementById("countdown-sec");
+        const timerBar = document.getElementById("timer-bar");
+        const joinBtn = document.getElementById("join-btn");
+
+        // SVG Radial Math
+        const RADIUS = 54;
+        const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
+
+        // Audio Synth Context (Pure JS sound without external assets)
+        let audioCtx = null;
+
+        function playClickSound() {
+            try {
+                if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                if (audioCtx.state === 'suspended') audioCtx.resume();
+                
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(587.33, audioCtx.currentTime); // D5
+                osc.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.15); // A5
+                
+                gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.15);
+                
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.15);
+            } catch(e) {}
+        }
+
+        // Timer Display Formatter
+        function formatClock(sec) {
+            const m = Math.floor(sec / 60);
+            const s = sec % 60;
+            return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+        }
+
+        // Update Timer Function
+        function renderTimer() {
+            digitalClock.textContent = formatClock(secondsLeft);
+            countdownSec.textContent = secondsLeft;
+
+            // Offset calculation
+            const progress = secondsLeft / TOTAL_DURATION;
+            const offset = CIRCUMFERENCE - (progress * CIRCUMFERENCE);
+            timerBar.style.strokeDashoffset = offset;
+
+            if (secondsLeft <= 0) {
+                clearInterval(timerInterval);
+                playClickSound();
+                window.location.href = TELEGRAM_URL;
+            } else {
+                secondsLeft--;
+            }
+        }
+
+        // Initialize Countdown
+        renderTimer();
+        const timerInterval = setInterval(renderTimer, 1000);
+
+        // Click Handler
+        joinBtn.addEventListener('click', function(e) {
+            playClickSound();
+        });
+
+        // Interactive High-Performance Particle Engine
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+
+        let particles = [];
+        let mouseX = -1000;
+        let mouseY = -1000;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            initParticles();
+        }
+
+        function initParticles() {
+            particles = [];
+            const count = Math.min(Math.floor(window.innerWidth * 0.12), 110);
+            
+            for (let i = 0; i < count; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    vx: (Math.random() - 0.5) * 0.6,
+                    vy: (Math.random() - 0.5) * 0.6,
+                    radius: Math.random() * 2 + 0.5,
+                    color: Math.random() > 0.5 ? '#00f2fe' : (Math.random() > 0.5 ? '#ff007f' : '#7928ca'),
+                    alpha: Math.random() * 0.7 + 0.3
+                });
+            }
+        }
+
+        function renderParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            for (let i = 0; i < particles.length; i++) {
+                let p = particles[i];
+
+                p.x += p.vx;
+                p.y += p.vy;
+
+                // Bounce off edges
+                if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+                if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+                // Draw Particle
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fillStyle = p.color;
+                ctx.globalAlpha = p.alpha;
+                ctx.fill();
+
+                // Draw Distance Connections
+                for (let j = i + 1; j < particles.length; j++) {
+                    let p2 = particles[j];
+                    let dx = p.x - p2.x;
+                    let dy = p.y - p2.y;
+                    let dist = Math.sqrt(dx * dx + dy * dy);
+
+                    if (dist < 100) {
+                        ctx.beginPath();
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.strokeStyle = p.color;
+                        ctx.globalAlpha = (1 - dist / 100) * 0.25;
+                        ctx.lineWidth = 0.6;
+                        ctx.stroke();
+                    }
+                }
+            }
+
+            requestAnimationFrame(renderParticles);
+        }
+
+        window.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+        renderParticles();
+    </script>
+</body>
+</html>
